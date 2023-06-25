@@ -208,7 +208,7 @@
   font-family: var(--header-font);
   font-weight: var(--font-regular);
   font-size: var(--normal-font-size);
-  line-height: 23.5px;
+  line-height: 25px;
   color: var(--title-color);
 }
 
