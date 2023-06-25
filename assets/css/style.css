@@ -226,5 +226,26 @@
 }
 
 .home-extends {
-  margin-top: 4.5rem;
+  margin-top: 7rem;
+}
+
+.home-extends__title-head {
+  text-align: center;
+  font-family: var(--body-font);
+  font-weight: var(--font-medium);
+  color: var(--text-green);
+  font-size: var(--normal-font-size);
+  margin-bottom: .5rem;
+}
+
+.home-extends__description {
+  text-align: center;
+  line-height: 22px;
+}
+
+.home-extends__banner {
+  width: 100%;
+  max-width: 450px;
+  height: 345px;
+  background: url(../img/home-extends-banner.svg) no-repeat center / cover;
 }
