@@ -20,11 +20,11 @@ if (navClose) {
 const navLinks = document.querySelectorAll(".nav__link, .nav__link-button"),
   main = document.querySelector("main")
 
-const menuHiddenFunction = () => {
+const menuHideFunction = () => {
   const navMenu = document.getElementById("nav-menu")
   navMenu.classList.remove("show-menu")
 }
 
 navLinks.forEach(link => {
-  link.addEventListener("click", menuHiddenFunction)
+  link.addEventListener("click", menuHideFunction)
 });
