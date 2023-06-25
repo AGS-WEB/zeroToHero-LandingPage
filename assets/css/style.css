@@ -1,0 +1,74 @@
+/* VARIABLES CSS */
+:root {
+  --header-height: 3.5rem;
+  /* colors */
+  /* color mode HSL(hue,saturation,lightness) */
+  --green-olive-bg: hsl(167, 37%, 19%);
+  --green-alt-bg: hsl(176, 67%, 14%);
+  --text-color: hsl(0, 0%, 85%);
+  --text-green: hsl(167, 82%, 25%);
+  --first-gradient: linear-gradient(40deg, #05C3A2 0%, #0B6953 100%);
+  --title-color: #fff;
+  --body-color: hsl(0, 0%, 12%);
+
+  /* font and typography */
+  /* .5rem = 8px, 1rem = 16px... */
+  --header-font: "Inter", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --bigger-font-size: 2.25rem;
+  --big-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  /* font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* z-index */
+  --z-fixed: 100;
+  --z-tooltip: 10;
+}
+
+/* Responsive Typography */
+@media screen and (min-width: 1152px) {
+  :root {
+    --bigger-font-size: 4rem;
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/* Reusable CSS Classes */
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section__title {
+  font-size: var(--big-font-size);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.main {
+  overflow: hidden;
+}
