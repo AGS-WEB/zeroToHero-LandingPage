@@ -168,6 +168,7 @@
   color: var(--title-color);
 }
 
+/* Show Menu */
 .show-menu {
   top: 0;
 }
