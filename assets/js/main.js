@@ -28,3 +28,5 @@ const menuHideFunction = () => {
 navLinks.forEach(link => {
   link.addEventListener("click", menuHideFunction)
 });
+
+main.addEventListener("click", menuHideFunction)
