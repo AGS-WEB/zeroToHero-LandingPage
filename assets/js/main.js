@@ -34,7 +34,8 @@ main.addEventListener("click", menuHideFunction)
 // Cartõeszinhos do sobre
 const contentViews = document.querySelectorAll(".content__more"),
   contentBtns = document.querySelectorAll(".content__button"),
-  contentClose = document.querySelectorAll(".content__more-icon");
+  contentClose = document.querySelectorAll(".content__more-icon"),
+  contentChild = document.querySelectorAll(".content__more-data")
 
 let modal = function (modalClick) {
   contentViews[modalClick].classList.add("active-modal");
@@ -52,4 +53,16 @@ contentClose.forEach((close) => {
       content.classList.remove("active-modal");
     });
   });
+});
+
+contentViews.forEach(content => {
+  content.addEventListener("click", (e) => {
+    content.classList.remove("active-modal")
+  })
+});
+
+contentChild.forEach(child => {
+  child.addEventListener("click", (e) => {
+    e.stopPropagation()
+  })
 });
