@@ -30,3 +30,26 @@ navLinks.forEach(link => {
 });
 
 main.addEventListener("click", menuHideFunction)
+
+// Cartõeszinhos do sobre
+const contentViews = document.querySelectorAll(".content__more"),
+  contentBtns = document.querySelectorAll(".content__button"),
+  contentClose = document.querySelectorAll(".content__more-icon");
+
+let modal = function (modalClick) {
+  contentViews[modalClick].classList.add("active-modal");
+};
+
+contentBtns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    modal(i);
+  });
+});
+
+contentClose.forEach((close) => {
+  close.addEventListener("click", () => {
+    contentViews.forEach((content) => {
+      content.classList.remove("active-modal");
+    });
+  });
+});
