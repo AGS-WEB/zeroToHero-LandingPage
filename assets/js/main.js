@@ -66,3 +66,22 @@ contentChild.forEach(child => {
     e.stopPropagation()
   })
 });
+
+// Ação contents
+const skillsContent = document.getElementsByClassName("acao__item"),
+  skillsHeader = document.querySelectorAll(".acao__item-head");
+
+function toggleSkills() {
+  let itemClass = this.parentNode.className;
+
+  for (i = 0; i < skillsContent.length; i++) {
+    skillsContent[i].className = "acao__item item__close";
+  }
+  if (itemClass === "acao__item item__close") {
+    this.parentNode.className = "acao__item item__open";
+  }
+}
+
+skillsHeader.forEach((el) => {
+  el.addEventListener("click", toggleSkills);
+});
