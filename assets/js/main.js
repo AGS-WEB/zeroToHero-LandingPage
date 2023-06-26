@@ -67,7 +67,7 @@ contentChild.forEach(child => {
   })
 });
 
-// Ação contents
+// Ação contents show/hide
 const skillsContent = document.getElementsByClassName("acao__item"),
   skillsHeader = document.querySelectorAll(".acao__item-head");
 
@@ -85,3 +85,12 @@ function toggleSkills() {
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
+
+// Scroll Header Background Show/Hide
+function scrollHeader() {
+  const nav = document.getElementById("header");
+  // When the scroll is higher than 80 viewport height, add a one box-shadow to the your header
+  if (this.scrollY >= 80) nav.classList.add("scroll-header");
+  else nav.classList.remove("scroll-header");
+}
+window.addEventListener("scroll", scrollHeader);

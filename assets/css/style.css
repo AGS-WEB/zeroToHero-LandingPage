@@ -81,7 +81,7 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  transition: background .4s;
+  transition: background .4s ease;
 }
 
 .nav {
@@ -112,6 +112,11 @@
 .nav__toggle {
   font-size: 1.25rem;
   color: var(--title-color);
+}
+
+.scroll-header {
+  background: #0B3331;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Bloco do menu de navegação para dispositivos moveis */
@@ -361,7 +366,7 @@
 }
 
 .acao {
-  padding-block: 5rem 5rem;
+  padding-block: 3.5rem 5rem;
   background-color: var(--green-olive-bg);
 }
 
