@@ -539,6 +539,13 @@ footer {
   color: var(--title-color);
 }
 
+.footer__link:hover {
+  background: var(--first-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .footer__copy {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
@@ -546,7 +553,45 @@ footer {
 }
 
 .footer__copy a {
-  color: var(--body-color);
+  color: #000;
   font-weight: var(--font-bold);
   font-size: var(--small-font-size);
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: .5rem;
+  background-color: hsl(0, 0%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: hsl(167, 82%, 25%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(167, 82%, 33%);
+}
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background: #fff;
+  display: inline-flex;
+  padding: 6px;
+  font-size: 1.25rem;
+  color: var(--body-color);
+  border-radius: 50%;
+  z-index: var(--z-fixed);
+  box-shadow: 0 4px 16px hsla(0, 0%, 0%, .1);
+  transition: bottom .4s, transform .4s;
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
+
+.scrollup:hover {
+  transform: translateY(-.25rem);
 }

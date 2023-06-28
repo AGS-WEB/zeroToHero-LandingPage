@@ -108,3 +108,13 @@ const testemunhosSwiper = new Swiper('.testemunhos__cards', {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Show scroll up
+const scrollUp = () => {
+  const scrollUp = document.getElementById("scroll-up")
+  this.scrollY >= 300 
+    ? scrollUp.classList.add("show-scroll") 
+    : scrollUp.classList.remove("show-scroll")
+}
+
+window.addEventListener("scroll", scrollUp)
