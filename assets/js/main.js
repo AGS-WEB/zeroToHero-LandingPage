@@ -100,7 +100,6 @@ const testemunhosSwiper = new Swiper('.testemunhos__cards', {
   // Optional parameters
   slidesPerView: "auto",
   centeredSlides: true,
-  loop: true,
 
   // Navigation arrows
   navigation: {
