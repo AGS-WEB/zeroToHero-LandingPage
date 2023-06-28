@@ -497,3 +497,56 @@
 .swiper-button-next {
   right: calc(50% - 3rem);
 }
+
+footer {
+  margin-top: 3rem;
+  background-color: var(--green-alt-bg);
+  padding-block: 2rem 1rem;
+}
+
+.footer__logo {
+  color: var(--title-color);
+  font-family: var(--body-font);
+  font-weight: var(--font-bold);
+  font-size: 1.2rem;
+}
+.footer__logo span {
+  background: var(--first-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footer__content {
+  row-gap: 2rem;
+}
+
+.footer__description {
+  margin-top: 0.5rem;
+}
+
+.footer__data {
+  display: flex;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__link {
+  color: var(--title-color);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+}
+
+.footer__copy a {
+  color: var(--body-color);
+  font-weight: var(--font-bold);
+  font-size: var(--small-font-size);
+}
