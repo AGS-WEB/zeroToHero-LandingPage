@@ -94,3 +94,17 @@ function scrollHeader() {
   else nav.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
+
+// Swiper 
+const testemunhosSwiper = new Swiper('.testemunhos__cards', {
+  // Optional parameters
+  slidesPerView: "auto",
+  centeredSlides: true,
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
