@@ -253,7 +253,7 @@
   transform: translateY(-60px);
   z-index: -1;
   width: 100%;
-  max-width: 450px;
+  max-width: 630px;
   height: 345px;
   background: url(../img/home-extends-banner.svg) no-repeat center / cover;
 }
@@ -276,12 +276,17 @@
   text-align: center;
 }
 
+
 .sobre__content-item {
   display: flex;
   flex-direction: column;
   padding: 2rem 1.5rem;
   background: linear-gradient(180deg, hsla(0, 0%, 12%, 0), hsl(0, 0%, 15%));
   row-gap: 1rem;
+}
+
+.sobre__content-item:hover {
+  box-shadow: 0 12px 16px hsla(0, 0%, 0%, 0.2);
 }
 
 .content__title {
@@ -406,6 +411,7 @@
   column-gap: .2rem;
   color: var(--title-color);
   font-size: 1.2rem;
+  font-weight: var(--font-bold);
   cursor: pointer;
 }
 
@@ -444,6 +450,7 @@
   border-radius: 10px;
   margin-inline: 1rem;
   margin-bottom: 4rem;
+  justify-content: center;
   height: 250px;
 }
 
@@ -595,4 +602,211 @@ footer {
 
 .scrollup:hover {
   transform: translateY(-.25rem);
+}
+
+/* Breakpoints */
+/* for small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  
+  .home__data .section__title {
+    font-size: 1.8rem;
+  }
+
+  .sobre__content {
+    grid-template-columns: 1fr;
+  }
+
+  .content__more-data {
+    padding: 1.5rem 1rem;
+  }
+
+  .testemunhos__card {
+    height: auto;
+  }
+}
+
+/* for medium devices */
+@media screen and (min-width: 576px) {
+  .home__data .section__title {
+    font-size: 3rem;
+  }
+  .home__description {
+    font-size: 1rem;
+  }
+  .home__button {
+    font-size: 1.1rem;
+  }
+
+  .home-extends {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__title-head {
+    font-size: 1rem;
+  }
+  .section__title {
+    font-size: 1.8rem;
+  }
+  .section__description {
+    font-size: 1rem;
+  }
+
+  .sobre-icon {
+    font-size: 2.8rem;
+  }
+  .content__title {
+    font-size: 1rem;
+  }
+  .content__button p {
+    font-size: 1rem;
+  }
+  .content-button-icon {
+    font-size: 1rem;
+  }
+
+  .content__more-data {
+    width: 70%;
+  }
+  .content__more-title {
+    font-size: 1.8rem;
+  }
+  .content__more-item {
+    font-size: 1.1rem;
+  }
+  .content__more-icon {
+    font-size: 1.7rem;
+  }
+
+  .acao__js {
+    font-size: 8.2rem;
+  }
+  .acao__item-head {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .acao__description-bottom {
+    font-size: 1rem;
+  }
+
+  .testemunhos__card {
+    height: 300px;
+    justify-content: space-between;
+    padding-block: 3rem;
+  }
+  .testemunhos__description {
+    font-size: 1.1rem;
+  }
+  .testemunhos__card-name {
+    font-size: 1rem;
+  }
+  .testemunhos__card-img {
+    width: 60px;
+  }
+
+  .footer__logo {
+    font-size: 1.5rem;
+  }
+  .footer__description {
+    font-size: 1rem;
+  }
+  .footer__link {
+    font-size: 1rem;
+  }
+  .footer__copy {
+    font-size: var(--small-font-size);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home__data .section__title {
+    text-align: center;
+  }
+  .home__description {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .home__button {
+    font-size: 1.3rem;
+  }
+
+  .section__title-head {
+    font-size: 1.2rem;
+  }
+  .section__title {
+    font-size: 2rem;
+  }
+  .section__description {
+    font-size: 1.2rem;
+  }
+
+  .home-extends__banner {
+    transform: translateY(-30px);
+  }
+
+  .sobre-icon {
+    font-size: 3rem;
+  }
+
+  .content__title {
+    font-size: 1.2rem;
+  }
+  .content__button p {
+    font-size: 1.2rem;
+  }
+  .content-button-icon {
+    font-size: 1.2rem;
+  }
+
+  .content__more-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 330px;
+  }
+  .content__more-item {
+    font-size: 1.2rem;
+  }
+  .content__more-icon {
+    font-size: 2rem;
+  }
+
+  .acao__js {
+    font-size: 9rem;
+  }
+  .acao__list {
+    margin-left: 2rem;
+  }
+  .acao__description-bottom {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+
+  .testemunhos__description {
+    font-size: 1.2rem;
+  }
+  .testemunhos__card-user {
+    display: flex;
+    align-items: center;
+  }
+  .testemunhos__card-img {
+    width: 80px;
+  }
+  .testemunhos__card-name {
+    font-size: 1.2rem;
+  }
+  .testemunhos__card-link {
+    font-size: 1rem;
+  }
+
+  .footer__logo {
+    font-size: 1.8rem;
+  }
+  .footer__description {
+    font-size: 1.2rem;
+  }
 }
