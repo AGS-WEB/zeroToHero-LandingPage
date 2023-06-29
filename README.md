@@ -22,6 +22,8 @@ This is my first project published here on GitHub. I have only been programming 
 
 - The project was built using only pure HTML, CSS, and JavaScript.
 
+- The design was created using Figma, and the website was built using the mobile-first concept.
+
 - Despite the project not being complex and being quite simple, it meets the need for a landing page. The design is well crafted and beautiful, the page flows in a logical way to lead the user to click on the CTA button.
 
 - There is no excessive information, no unnecessary text cluttering the page, only what is necessary to pique the user's interest and address their doubts.
