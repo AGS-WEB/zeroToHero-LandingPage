@@ -117,3 +117,24 @@ const scrollUp = () => {
 }
 
 window.addEventListener("scroll", scrollUp)
+
+// Scroll reveal
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400
+})
+
+sr.reveal(`.home__container`)
+
+sr.reveal(`.home-extends__data`, {origin: "left"})
+sr.reveal(`.home-extends__banner`, {origin: "bottom"})
+
+sr.reveal(`.sobre__data`, {origin: "bottom"})
+
+sr.reveal(`.acao__head`)
+sr.reveal(`.acao__bottom, .acao__button`, {origin: "bottom"})
+
+sr.reveal(`.testemunhos__data`, {origin: "left"})
+sr.reveal(`.testemunhos__cards`, {origin: "right"})

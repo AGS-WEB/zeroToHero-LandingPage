@@ -930,6 +930,9 @@ footer {
   .sobre {
     margin-bottom: 5rem;
   }
+  .content__more-data {
+    width: 40%;
+  }
 
   .acao {
     padding-block: 5.5rem 5rem;
