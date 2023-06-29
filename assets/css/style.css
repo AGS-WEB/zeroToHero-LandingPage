@@ -246,6 +246,7 @@
 .section__description {
   text-align: center;
   line-height: 22px;
+  font-weight: var(--font-regular);
 }
 
 .home-extends__banner {
@@ -258,17 +259,18 @@
   background: url(../img/home-extends-banner.svg) no-repeat center / cover;
 }
 
-.sobre {
+/* About section */
+.about {
   padding-block: 0 4rem;
 }
 
-.sobre__container {
+.about__container {
   display: flex;
   flex-direction: column;
   row-gap: 2.5rem;
 }
 
-.sobre__content {
+.about__content {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   column-gap: 1rem;
@@ -277,7 +279,7 @@
 }
 
 
-.sobre__content-item {
+.about__content-item {
   display: flex;
   flex-direction: column;
   padding: 2rem 1.5rem;
@@ -285,7 +287,7 @@
   row-gap: 1rem;
 }
 
-.sobre__content-item:hover {
+.about__content-item:hover {
   box-shadow: 0 12px 16px hsla(0, 0%, 0%, 0.2);
 }
 
@@ -294,12 +296,12 @@
   font-size: var(--normal-font-size);
 }
 
-.sobre-icon {
+.about-icon {
   color: var(--title-color);
   font-size: 2.5rem;
 }
 
-.sobre-icon:hover {
+.about-icon:hover {
   background: var(--first-gradient);
   background-clip: text;
   -webkit-background-clip: text;
@@ -370,42 +372,43 @@
   column-gap: .5rem;
 }
 
-.acao {
+/* Action section */
+.action {
   padding-block: 3.5rem 5rem;
   background-color: var(--green-olive-bg);
 }
 
-.acao__container {
+.action__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 1.5rem;
 }
 
-.acao__head {
+.action__head {
   text-align: center;
 }
 
-.acao__js {
+.action__js {
   font-family: var(--body-font);
   font-size: 7.5rem;
   color: hsl(47, 100%, 55%);
 }
 
-.acao__vanilla {
+.action__vanilla {
   font-size: 2rem;
   font-family: var(--header-font);
   transform: translateY(-18px);
 }
 
-.acao__list {
+.action__list {
   display: flex;
   flex-direction: column;
   row-gap: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
-.acao__item-head {
+.action__item-head {
   display: flex;
   align-items: center;
   column-gap: .2rem;
@@ -415,12 +418,12 @@
   cursor: pointer;
 }
 
-.acao-icon {
+.action-icon {
   font-size: 2rem;
   transition: .4s;
 }
 
-.acao__button {
+.action__button {
   padding: 18px 25px;
   color: var(--title-color);
   background: var(--first-gradient);
@@ -429,20 +432,21 @@
   font-weight: var(--font-bold);
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.62);
 }
-.acao__button:hover {
+.action__button:hover {
   box-shadow: 0px 2px 10px 0px rgba(2, 34, 0, 0.466);
 }
 
-.item__open .acao-icon {
+.item__open .action-icon {
   transform: rotate(90deg);
 }
 
-.item__close .acao__description-bottom {
+.item__close .action__description-bottom {
   height: 0;
   overflow: hidden;
 }
 
-.testemunhos__card {
+/* Testimonials section */
+.testimonials__card {
   display: flex;
   flex-direction: column;
   background-color: #E2E8F0;
@@ -454,30 +458,30 @@
   height: 250px;
 }
 
-.testemunhos__card-text {
+.testimonials__card-text {
   color: var(--body-color);
   font-weight: var(--font-medium);
   margin-bottom: 1rem;
 }
 
-.testemunhos__card-user {
+.testimonials__card-user {
   display: flex;
   flex-direction: column;
   color: var(--body-color);
 }
 
-.testemunhos__card-user-data {
+.testimonials__card-user-data {
   display: flex;
   align-items: center;
   column-gap: 1rem;
 }
 
-.testemunhos__card-user-profile {
+.testimonials__card-user-profile {
   display: flex;
   flex-direction: column;
 }
 
-.testemunhos__card-link {
+.testimonials__card-link {
   color: var(--green-alt-bg);
 }
 
@@ -506,6 +510,7 @@
   right: calc(50% - 3rem);
 }
 
+/* Footer */
 footer {
   margin-top: 3rem;
   background-color: var(--green-alt-bg);
@@ -566,6 +571,7 @@ footer {
   font-size: var(--small-font-size);
 }
 
+/* ScrollBar */
 ::-webkit-scrollbar {
   width: 0.6rem;
   border-radius: .5rem;
@@ -581,6 +587,7 @@ footer {
   background-color: hsl(167, 82%, 33%);
 }
 
+/* ScrollUp */
 .scrollup {
   position: fixed;
   right: 1rem;
@@ -615,7 +622,7 @@ footer {
     font-size: 1.8rem;
   }
 
-  .sobre__content {
+  .about__content {
     grid-template-columns: 1fr;
   }
 
@@ -623,7 +630,7 @@ footer {
     padding: 1.5rem 1rem;
   }
 
-  .testemunhos__card {
+  .testimonials__card {
     height: auto;
   }
 }
@@ -656,7 +663,7 @@ footer {
     font-size: 1rem;
   }
 
-  .sobre-icon {
+  .about-icon {
     font-size: 2.8rem;
   }
   .content__title {
@@ -682,29 +689,29 @@ footer {
     font-size: 1.7rem;
   }
 
-  .acao__js {
+  .action__js {
     font-size: 8.2rem;
   }
-  .acao__item-head {
+  .action__item-head {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
-  .acao__description-bottom {
+  .action__description-bottom {
     font-size: 1rem;
   }
 
-  .testemunhos__card {
+  .testimonials__card {
     height: 300px;
     justify-content: space-between;
     padding-block: 3rem;
   }
-  .testemunhos__description {
+  .testimonials__description {
     font-size: 1.1rem;
   }
-  .testemunhos__card-name {
+  .testimonials__card-name {
     font-size: 1rem;
   }
-  .testemunhos__card-img {
+  .testimonials__card-img {
     width: 60px;
   }
 
@@ -751,7 +758,7 @@ footer {
     transform: translateY(-30px);
   }
 
-  .sobre-icon {
+  .about-icon {
     font-size: 3rem;
   }
 
@@ -778,31 +785,31 @@ footer {
     font-size: 2rem;
   }
 
-  .acao__js {
+  .action__js {
     font-size: 9rem;
   }
-  .acao__list {
+  .action__list {
     margin-left: 2rem;
   }
-  .acao__description-bottom {
+  .action__description-bottom {
     font-size: 1.2rem;
     width: 80%;
   }
 
-  .testemunhos__description {
+  .testimonials__description {
     font-size: 1.2rem;
   }
-  .testemunhos__card-user {
+  .testimonials__card-user {
     display: flex;
     align-items: center;
   }
-  .testemunhos__card-img {
+  .testimonials__card-img {
     width: 80px;
   }
-  .testemunhos__card-name {
+  .testimonials__card-name {
     font-size: 1.2rem;
   }
-  .testemunhos__card-link {
+  .testimonials__card-link {
     font-size: 1rem;
   }
 
@@ -870,14 +877,14 @@ footer {
     font-size: 1.4rem;
   }
 
-  .acao__js {
+  .action__js {
     font-size: 10rem;
   }
-  .acao__list {
+  .action__list {
     margin-left: 4rem;
   }
 
-  .testemunhos__card {
+  .testimonials__card {
     width: 60%;
   }
 
@@ -927,26 +934,26 @@ footer {
     font-size: 1.5rem;
   }
 
-  .sobre {
+  .about {
     margin-bottom: 5rem;
   }
   .content__more-data {
     width: 40%;
   }
 
-  .acao {
+  .action {
     padding-block: 5.5rem 5rem;
   }
-  .acao__list {
+  .action__list {
     margin-left: 7rem;
   }
-  .acao__item-head {
+  .action__item-head {
     font-size: 1.6rem;
   }
-  .acao__button {
+  .action__button {
     font-size: 1.2rem;
   }
-  .acao__description-bottom {
+  .action__description-bottom {
     font-size: 1.4rem;
   }
 

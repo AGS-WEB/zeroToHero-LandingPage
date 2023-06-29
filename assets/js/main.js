@@ -1,22 +1,23 @@
+// NavMenu toggle/close
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close")
 
-// Verifica se navToggle existe, se sim cria o escutador
+// Check if navToggle exists, if so create the eventListener
 if (navToggle) {
   navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu");
   });
 };
 
-// Verifica se navClose existe, se sim cria o escutador
+// Check if navClose exists, if so create the eventListener
 if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
   });
 };
 
-// Esconde o navMenu caso clique em algum link ou fora do menu
+// Hide navMenu when click on link
 const navLinks = document.querySelectorAll(".nav__link, .nav__link-button"),
   main = document.querySelector("main")
 
@@ -31,7 +32,7 @@ navLinks.forEach(link => {
 
 main.addEventListener("click", menuHideFunction)
 
-// Cartõeszinhos do sobre
+// Cards 'about' show/hide
 const contentViews = document.querySelectorAll(".content__more"),
   contentBtns = document.querySelectorAll(".content__button"),
   contentClose = document.querySelectorAll(".content__more-icon"),
@@ -67,23 +68,23 @@ contentChild.forEach(child => {
   })
 });
 
-// Ação contents show/hide
-const skillsContent = document.getElementsByClassName("acao__item"),
-  skillsHeader = document.querySelectorAll(".acao__item-head");
+// Ação description show/hide
+const actionItem = document.getElementsByClassName("action__item"),
+  actionItemText = document.querySelectorAll(".action__item-head");
 
-function toggleSkills() {
+function toggleactionDescription() {
   let itemClass = this.parentNode.className;
 
-  for (i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = "acao__item item__close";
+  for (i = 0; i < actionItem.length; i++) {
+    actionItem[i].className = "action__item item__close";
   }
-  if (itemClass === "acao__item item__close") {
-    this.parentNode.className = "acao__item item__open";
+  if (itemClass === "action__item item__close") {
+    this.parentNode.className = "action__item item__open";
   }
 }
 
-skillsHeader.forEach((el) => {
-  el.addEventListener("click", toggleSkills);
+actionItemText.forEach((element) => {
+  element.addEventListener("click", toggleactionDescription);
 });
 
 // Scroll Header Background Show/Hide
@@ -93,10 +94,11 @@ function scrollHeader() {
   if (this.scrollY >= 80) nav.classList.add("scroll-header");
   else nav.classList.remove("scroll-header");
 }
+
 window.addEventListener("scroll", scrollHeader);
 
 // Swiper 
-const testemunhosSwiper = new Swiper('.testemunhos__cards', {
+const testimonialsSwiper = new Swiper('.testimonials__cards', {
   // Optional parameters
   slidesPerView: "auto",
   centeredSlides: true,
@@ -127,14 +129,13 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home__container`)
-
 sr.reveal(`.home-extends__data`, {origin: "left"})
 sr.reveal(`.home-extends__banner`, {origin: "bottom"})
 
-sr.reveal(`.sobre__data`, {origin: "bottom"})
+sr.reveal(`.about__data`, {origin: "bottom"})
 
-sr.reveal(`.acao__head`)
-sr.reveal(`.acao__bottom, .acao__button`, {origin: "bottom"})
+sr.reveal(`.action__head`)
+sr.reveal(`.action__bottom, .action__button`, {origin: "bottom"})
 
-sr.reveal(`.testemunhos__data`, {origin: "left"})
-sr.reveal(`.testemunhos__cards`, {origin: "right"})
+sr.reveal(`.testimonials__data`, {origin: "left"})
+sr.reveal(`.testimonials__cards`, {origin: "right"})
