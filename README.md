@@ -9,7 +9,7 @@
 <p align="center">LandingPage</blockquote>
 
 <p align="center">
-  <a href="https://zerotohero-landing.netlify.app">
+  <a href="https://zerotohero-landing.netlify.app" target="_blank">
     View Online
   </a>
 </p>
