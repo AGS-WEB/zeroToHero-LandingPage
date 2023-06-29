@@ -900,6 +900,10 @@ footer {
   .swiper-button-prev {
     font-size: 2rem;
   }
+
+  .scrollup {
+    right: 3rem;
+  }
 }
 
 @media screen and (min-width: 1152px) {
