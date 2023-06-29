@@ -347,6 +347,7 @@
   background-color: var(--green-olive-bg);
   padding: 1.5rem;
   border-radius: 0.5rem;
+  max-width: 530px;
 }
 
 .content__more-title {
